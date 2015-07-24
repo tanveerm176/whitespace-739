@@ -1,7 +1,7 @@
 import urllib2 
 import json as js
 
-def extract_labels():
+def labels():
     galax_url = urllib2.urlopen('http://star-api.herokuapp.com/api/v1/local_groups')
     galax_info = galax_url.read()
     galax_params = js.loads(galax_info)
@@ -11,9 +11,9 @@ def extract_labels():
          label.append(i['label'])
     
     return label
+    #return galax_params
 
-
-def extract_distly():
+def distly():
     galax_url = urllib2.urlopen('http://star-api.herokuapp.com/api/v1/local_groups')
     galax_info = galax_url.read()
     galax_params = js.loads(galax_info)
@@ -28,8 +28,8 @@ def extract_distly():
 
 
 
-label_list = extract_labels() 
-dist_list = extract_distly()
+label_list = labels() 
+dist_list = distly()
 galax_dict = {}
 
 def extract_dict():
