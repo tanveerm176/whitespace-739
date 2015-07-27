@@ -10,7 +10,7 @@ def labels():
     for i in star_params:
          label.append(i['label'])
     
-    return label[:50]
+    return label[:25]
     #return star_params[:100]
 
 def distly():
@@ -22,7 +22,7 @@ def distly():
     for i in star_params:
         distance.append(i['distly'])
     
-    return distance[:50]
+    return distance[:25]
     
 
 

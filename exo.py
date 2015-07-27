@@ -2,7 +2,7 @@ import urllib2
 import json as js
 
 def labels():
-    exo_url = urllib2.urlopen('http://star-api.herokuapp.com/api/v1/stars')
+    exo_url = urllib2.urlopen('http://star-api.herokuapp.com/api/v1/exo_planets')
     exo_info = exo_url.read()
     exo_params = js.loads(exo_info)
     label= []
@@ -14,13 +14,13 @@ def labels():
     #return exo_params[:50]
 
 def distly():
-    exo_url = urllib2.urlopen('http://star-api.herokuapp.com/api/v1/stars')
+    exo_url = urllib2.urlopen('http://star-api.herokuapp.com/api/v1/exo_planets')
     exo_info = exo_url.read()
     exo_params = js.loads(exo_info)
     distance = []
     
     for i in exo_params:
-        distance.append(i['distly'])
+        distance.append(i['distance'])
     
     return distance[:25]
     
