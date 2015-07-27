@@ -10,7 +10,7 @@ def labels():
     for i in star_params:
          label.append(i['label'])
     
-    return label[:100]
+    return label[:50]
     #return star_params[:100]
 
 def distly():
@@ -22,7 +22,7 @@ def distly():
     for i in star_params:
         distance.append(i['distly'])
     
-    return distance[:100]
+    return distance[:50]
     
 
 
@@ -41,6 +41,6 @@ def extract_dict():
     
     return star_dict
 
-def select_galax(star):
+def select_star(star):
     return extract_dict()[star]
 

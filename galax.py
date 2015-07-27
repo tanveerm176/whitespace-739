@@ -10,7 +10,7 @@ def labels():
     for i in galax_params:
          label.append(i['label'])
     
-    return label
+    return label[:25]
     #return galax_params
 
 def distly():
@@ -22,7 +22,7 @@ def distly():
     for i in galax_params:
         distance.append(i['distly'])
     
-    return distance
+    return distance[:25]
     
 
 

@@ -10,7 +10,7 @@ def labels():
     for i in exo_params:
          label.append(i['label'])
     
-    return label[:50]
+    return label[:25]
     #return exo_params[:50]
 
 def distly():
@@ -22,7 +22,7 @@ def distly():
     for i in exo_params:
         distance.append(i['distly'])
     
-    return distance[:50]
+    return distance[:25]
     
 
 
