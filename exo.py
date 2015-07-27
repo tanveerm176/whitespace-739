@@ -41,6 +41,10 @@ def extract_dict():
     
     return exo_dict
 
+
+
+
 def select_exo(exo):
     return extract_dict()[exo]
+
 
