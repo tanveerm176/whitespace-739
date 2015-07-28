@@ -12,17 +12,21 @@ def date():
 		c = "0" + c
 	date = a + "-" + b +"-" + c
 	return date
-
-u = urllib2.urlopen("https://api.nasa.gov/planetary/apod?date="+date()+"&concept_tags=True&api_key=DEMO_KEY")
-xtextx = u.read()
-text = json.loads(xtextx)
+def _text():
+	u = urllib2.urlopen("https://api.nasa.gov/planetary/apod?date="+date()+"&concept_tags=True&api_key=TCmI6MYSNZZB72Jk4x8iwHgGgCwQhyqbvKJ00rcV")
+	xtextx = u.read()
+	text = json.loads(xtextx)
+	return text
 
 def get_img():
-	nasa_img = text['url']
+	nasa_img = _text()['url']
 	return nasa_img
 
 	
 def get_title():
-	_title = text['title']
+	_title = _text()['title']
 	return _title
 
+def get_expl():
+	expl = _text()['explanation']
+	return expl
