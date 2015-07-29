@@ -39,7 +39,7 @@ def extra():
     gh = exo.labels()
     vv = galax.labels1()
     hh = star.labels2()
-    return render_template("extra.html",l = hh)
+    return render_template("extra.html",l = vv, s = gh, a = hh)
 
 
 if __name__ == "__main__":
