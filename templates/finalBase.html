@@ -1,20 +1,36 @@
  <!DOCTYPE html>
 <html>
 <head>
+<style>
+body {
+background-image:url("../static/spaceBackground.jpg");
+}
+.button {
+  font: bold 11px Arial;
+  text-decoration: none;
+  background-color: #EEEEEE;
+  color: #333333;
+  padding: 2px 6px 2px 6px;
+  border-top: 1px solid #CCCCCC;
+  border-right: 1px solid #333333;
+  border-bottom: 1px solid #333333;
+  border-left: 1px solid #CCCCCC;
+}
+</style>
 <title>Team White Space</title>
 <link rel="stylesheet" type="text/css" href="../static/finalStyle.css">
-<body background="spaceBackground.jpg">
+<body>
 </head>
 <body>
 	
-<div id="header">
-<h1> <font color="red">Planet Website</font> 
-	  <input type="submit" value="Exoplanets"></fieldset>
-	  <input type="submit" value="Stars"></fieldset>
-	  <input type="submit" value="Galaxies"></fieldset>
-	  <input type="submit" value="Home"></fieldset>
-		
-</h1>
+<div class="header">
+<h1><font color="red">Space Horizon</font></h1>
+</div>
+<div class="aside">
+<h3><a class = "button" href="/main/">Exoplanets</a></li>
+  <a class = "button" href="/stars/">Stars</a></li>
+  <a class = "button" href="/galaxy/">Galaxies</a></li>
+  <a class = "button" href="/">Main</a></li></h3>
 </div>
 
 {% for i in range(l|length) %}
