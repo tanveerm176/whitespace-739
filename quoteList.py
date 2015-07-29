@@ -1,7 +1,8 @@
-from random import randint
+import random
+
 a = 'It is clear to everyone that astronomy at all events compels the soul to look upwards, and draws it from the things of this world to the other - Plato'
 
-c = "Do there exist many worlds, or is there but a single world... This is one of the most noble and exalted questions in the study of Nature - Albertus Magnus"
+c = 'Do there exist many worlds, or is there but a single world... This is one of the most noble and exalted questions in the study of Nature - Albertus Magnus'
 d = 'The history of astronomy is a history of receding horizons - Edwin P. Hubble'
 e = 'The boundary condition of the universe is that is has no boundary - Stephen Hawking'
 f = 'This dead of midnight is the noon of thought, And Wisdom mounts her zenith with the stars - Anna Barbauld'
@@ -14,11 +15,6 @@ k = 'Astronomy is the science of the harmony of infinite expanse - Lord john Rus
 
 
 def generate():
-    list = ([a, c, d, e, f, g, h, i, j, k])
-    return list
-    
-
-def random_qoute():
-    indices = randint(0,9)
-    quote = generate()[indices]
+    quote = random.choice([a, c, d, e, f, g, h, i, j, k])
     return quote
+
