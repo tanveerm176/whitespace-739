@@ -16,17 +16,16 @@ def _text():
 	u = urllib2.urlopen("https://api.nasa.gov/planetary/apod?date="+date()+"&concept_tags=True&api_key=TCmI6MYSNZZB72Jk4x8iwHgGgCwQhyqbvKJ00rcV")
 	xtextx = u.read()
 	text = json.loads(xtextx)
-	return text
+        list_text = []
+        a = list_text.append(text)
+        return list_text
 
-def get_img():
-	nasa_img = _text()['url']
-	return nasa_img
-
-	
-def get_title():
-	_title = _text()['title']
-	return _title
-
-def get_expl():
-	expl = _text()['explanation']
-	return expl
+if _text()[0]['media_type'] == 'image':
+        def get_img():
+                date_text = _text()
+                nasa_img = date_text[0]['url']
+                _title = date_text[0]['title']
+                expl = date_text[0]['explanation']
+        
+                # return nasa_img,_title,expl
+                return nasa_img, _title , expl 
