@@ -34,4 +34,4 @@ def stars():
 
 if __name__ == "__main__":
         pic_flask.debug = True
-        pic_flask.run()
+        pic_flask.run(host = '0.0.0.0')
