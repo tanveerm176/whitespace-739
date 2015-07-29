@@ -2,17 +2,20 @@
 <html>
 <head>
 <title>Team White Space</title>
-<h1><font color="red">Space Horizon</font>
-	  <input type="submit" value="Exoplanets"></fieldset>
-	  <input type="submit" value="Stars"></fieldset>
-	  <input type="submit" value="Galaxies"></fieldset>
-	  <input type="submit" value="Main"></fieldset>
-	  
-</h1>
+<div class="header">
+<h1><font color="red">Space Horizon</font></h1>
+</div>
+<div class="aside">
+<h3><a href="#exoplanets">Exoplanets</a></li>
+  <a href="#stars">Stars</a></li>
+  <a href="#galaxies">Galaxies</a></li>
+  <a href="#main">Main</a></li></h3>
+</div>
 <style>
 #header {
     background-color:blue;
     color:white;
+	float: left;
     text-align:center;
     padding:5px;
 }
@@ -56,8 +59,20 @@
     float:left;
     padding:10px;
 }
-body{
-	background-color: #cccccc;
+body {
+	background-color: #cccccc;ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+ul {
+   list-style-type: circle;
+   margin: 0;
+   padding: 0;
+}
+li {
+    display: inline;
 }
 </style>
 </head>
