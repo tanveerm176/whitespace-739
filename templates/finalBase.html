@@ -2,7 +2,7 @@
 <html>
 <head>
 <title>Team White Space</title>
-<link rel="stylesheet" type="text/css" href="finalStyle.css">
+<link rel="stylesheet" type="text/css" href="../static/finalStyle.css">
 <body background="spaceBackground.jpg">
 </head>
 <body>
@@ -18,7 +18,14 @@
 </h1>
 </div>
 
+{% for i in range(l|length) %}
+
 <div class="section">
+<h1>{{l[i]}}</h1>
+<p>{{z[i]}} light years away from you.</p>
+</div>
+
+<!--<div class="section">
 <h1>{{l}}</h1>
 <p>{{z}}</p>
 </div>
@@ -150,7 +157,8 @@
 <div class="section">
 <h1>{{l}}</h1>
 <p>{{z}}</p>
-</div>
+</div>-->
 
+{%endfor%}
 </body>
 </html>
