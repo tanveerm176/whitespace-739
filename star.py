@@ -1,7 +1,7 @@
 import urllib2 
 import json as js
 
-def labels():
+def labels2():
     star_url = urllib2.urlopen('http://star-api.herokuapp.com/api/v1/stars')
     star_info = star_url.read()
     star_params = js.loads(star_info)
@@ -13,7 +13,7 @@ def labels():
     return label[:25]
     #return star_params[:100]
 
-def distly():
+def distly2():
     star_url = urllib2.urlopen('http://star-api.herokuapp.com/api/v1/stars')
     star_info = star_url.read()
     star_params = js.loads(star_info)
@@ -28,8 +28,8 @@ def distly():
 
 
 
-label_list = labels() 
-dist_list = distly()
+label_list = labels2() 
+dist_list = distly2()
 star_dict = {}
 
 def extract_dict():
