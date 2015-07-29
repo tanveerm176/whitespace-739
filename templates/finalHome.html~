@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!--<title>Team White Space</title> //-->
+<!--<h1><font color="red">Space</font>
+	<select>
+	  <option value="Exoplanets">Exoplanets</option>
+	  <option value="Stars">Stars</option>
+	  <option value="Galaxies">Galaxies</option>
+	  <input type="submit" value="Submit"></fieldset>
+		</select>
+</h1>-->
+<!--<body background="spaceBackground.jpg">-->
+<style>
+#header {
+    background-color:blue;
+    color:white;
+    text-align:center;
+    padding:5px;
+}
+.figure {
+outline: #00FF00 dotted thick;
+    line-height:30px;
+    background-color:#ffffff;
+    height:250px;
+    width:250px;
+    float:left;
+    padding:5px;
+}
+.figure {
+    width:710px;
+    float:left;
+    padding:10px;
+}
+.section {
+outline: #000000 dotted thick;
+    line-height:30px;
+    background-color:#eeeeee;
+    height:100px;
+    width:500px;
+    float:left;
+    padding:5px;
+}
+.article {
+outline: #00FF00 dotted thick;
+    line-height:30px;
+    background-color:#eeeeee;
+    height:520px;
+    width:250px;
+    float:left;
+    padding:5px;
+}
+#pic{
+height:400px;
+width:400px;
+}	
+</style>
+</head>
+<body>
+
+<div class="figure">
+<h1>{{k}}</h1>
+</div>
+
+<div class="section" id = "pic" >
+<img src={{x}} />
+</div>
+
+<div class="article">
+<p>{{h}}</p>
+</div>
+
+
+
+</body>
+</html>

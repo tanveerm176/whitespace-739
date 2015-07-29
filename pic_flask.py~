@@ -6,11 +6,17 @@ import time_calc
 pic_flask = Flask(__name__)
 @pic_flask.route('/')
 def pic():
+<<<<<<< HEAD
+	i = pic_engine.get_img()
+	t = pic_engine.get_title()
+	f = pic_engine.get_expl()
+	return render_template("finalHome.html", x = i, k = t, h = f)
+=======
         i = pic_engine.get_img()[0]
         t = pic_engine.get_img()[1]
         f = pic_engine.get_img()[2]
         return render_template("finalHome.html", x = i, k = t, h = f)
-
+>>>>>>> c06a0b76117f21cb7358c3a561d19f0d0b838578
 
 @pic_flask.route('/main/')
 def main():

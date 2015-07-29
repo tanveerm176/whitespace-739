@@ -9,11 +9,12 @@
 	
 <div id="header">
 <h1> <font color="red">Planet Website</font> 
-	  <input type="submit" value="Exoplanets"></fieldset>
-	  <input type="submit" value="Stars"></fieldset>
-	  <input type="submit" value="Galaxies"></fieldset>
-	  <input type="submit" value="Home"></fieldset>
-		
+	<select>
+	  <option value="Exoplanets">Exoplanets</option>
+	  <option value="Stars">Stars</option>
+	  <option value="Galaxies">Galaxies</option>
+	  <input type="submit" value="Submit"></fieldset>
+		</select>
 </h1>
 </div>
 
@@ -22,6 +23,7 @@
 <div class="section">
 <h1>{{l[i]}}</h1>
 <p>{{z[i]}} light years away from you.</p>
+<p>It will take {{p[i]}}</p>
 </div>
 
 <!--<div class="section">

@@ -1,0 +1,21 @@
+<style>
+#header {
+    background-color:blue;
+    color:white;
+    text-align:center;
+    padding:5px;
+}
+.section {
+    line-height:30px;
+    background-color:#eeeeee;
+    height:195px;
+    width:100px;
+    float:left;
+    padding:5px;
+}
+.section {
+    width:295px;
+    float:left;
+    padding:10px;
+}
+</style> 

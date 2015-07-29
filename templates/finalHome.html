@@ -2,15 +2,13 @@
 <html>
 <head>
 <title>Team White Space</title>
-<h1><font color="red">Space</font>
-	<select>
-	  <option value="Exoplanets">Exoplanets</option>
-	  <option value="Stars">Stars</option>
-	  <option value="Galaxies">Galaxies</option>
-	  <input type="submit" value="Submit"></fieldset>
-		</select>
+<h1><font color="red">Space Horizon</font>
+	  <input type="submit" value="Exoplanets"></fieldset>
+	  <input type="submit" value="Stars"></fieldset>
+	  <input type="submit" value="Galaxies"></fieldset>
+	  <input type="submit" value="Main"></fieldset>
+	  
 </h1>
-<body background="spaceBackground.jpg">
 <style>
 #header {
     background-color:blue;
@@ -31,12 +29,13 @@
     float:left;
     padding:10px;
 }
+<!--Title-->
 .section {
     line-height:30px;
-    background-color:#eeeeee;
-    height:50px;
+	background-color:#eeeeee;
+    height:200px;
     width:250px;
-    float:left;
+    float:center;
     padding:5px;
 }
 .section {
@@ -47,7 +46,7 @@
 .article {
     line-height:30px;
     background-color:#eeeeee;
-    height:520px;
+    height:502px;
     width:250px;
     float:left;
     padding:5px;
@@ -56,22 +55,28 @@
     width:510px;
     float:left;
     padding:10px;
+}
+body{
+	background-color: #cccccc;
 }
 </style>
 </head>
 <body>
 
 <div class="figure">
-<h3>{{k}}</h3>
+<img style = 'height:550px; width:700px' src = {{x}} />
 </div>
 
 <div class="section">
-<img src = {{x}} />
+<h2>{{k}}</h2>
 </div>
 
 <div class="article">
-<p>{{f}}</p>
+<p>{{h}}</p>
 </div>
+<footer>
+<p>&copy; Team WhiteSpace<p>
+</footer>
 
 </body>
 </html>
