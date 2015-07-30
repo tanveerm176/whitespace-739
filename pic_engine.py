@@ -2,6 +2,8 @@ import json
 import urllib2
 import random
 
+
+
 def date():
 	a = str(random.randint(1997,2014))
 	b = str(random.randint(1,12))
@@ -13,9 +15,9 @@ def date():
 	date = a + "-" + b +"-" + c
 	return date
 def _text():
-	u = urllib2.urlopen("https://api.nasa.gov/planetary/apod?date="+date()+"&concept_tags=True&api_key=TCmI6MYSNZZB72Jk4x8iwHgGgCwQhyqbvKJ00rcV")
-	xtextx = u.read()
-	text = json.loads(xtextx)
+        u = urllib2.urlopen("https://api.nasa.gov/planetary/apod?date="+date()+"&concept_tags=True&api_key=TCmI6MYSNZZB72Jk4x8iwHgGgCwQhyqbvKJ00rcV")
+        xtextx = u.read()
+        text = json.loads(xtextx)
         list_text = []
         a = list_text.append(text)
         return list_text

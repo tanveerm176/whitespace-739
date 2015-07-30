@@ -9,9 +9,10 @@ import quoteList
 pic_flask = Flask(__name__)
 @pic_flask.route('/')
 def pic():
-    i = pic_engine.get_img()[0]
-    t = pic_engine.get_img()[1]
-    f = pic_engine.get_img()[2]
+    b = pic_engine.get_img()
+    i = b[0]
+    t = b[1]
+    f = b[2]
     d = quoteList.generate()
     return render_template("finalHome.html", x = i, k = t, h = f, b = d)
 
@@ -33,14 +34,14 @@ def stars():
     gg = star.labels2()
     jj = star.distly2()
     return render_template("finalBase.html", l = gg, z = jj)
-
+'''
 @pic_flask.route('/extra/')
 def extra():
     gh = exo.labels()
     vv = galax.labels1()
     hh = star.labels2()
     return render_template("extra.html",l = vv, s = gh, a = hh)
-
+'''
 
 if __name__ == "__main__":
     pic_flask.debug = True
